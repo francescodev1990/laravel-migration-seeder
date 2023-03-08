@@ -21,5 +21,7 @@ class TrainTableSeeder extends Seeder
         $newTrain->partenza = '';
         $newTrain->treno = '';
         $newTrain->carrozza = '';
+
+        $newTrain->save();
     }
 }
