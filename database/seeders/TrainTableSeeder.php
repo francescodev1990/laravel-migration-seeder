@@ -1,0 +1,25 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+use App\Model\Train;
+use App\Models\Train as ModelsTrain;
+
+class TrainTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $newTrain = new ModelsTrain();
+        $newTrain->arrivo = '';
+        $newTrain->partenza = '';
+        $newTrain->treno = '';
+        $newTrain->carrozza = '';
+    }
+}
